@@ -1,0 +1,69 @@
+﻿@{
+    ViewData["Title"] = "Tela de Login";
+}
+<div>
+    <style>
+
+        .container{
+            max-width:50vh;
+            border-radius:15px;
+            background-color:black;
+            display:grid;
+            place-items:center;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(45deg, cyan, yellow);
+        }
+
+        input {
+            border-radius: 15px;
+            text-align: center;
+            padding: 15px;
+            border: none;
+            outline: none;
+            font-size: 15px;
+        }
+
+        h1 {
+            font-size: 40px;
+            color:white;
+        }
+
+        h2{
+            font-size: 15px;
+            color:lightgray;
+        }
+
+        button {
+            background-color: dodgerblue;
+            border: none;
+            padding: 15px;
+            width: 50%;
+            border-radius: 10px;
+            color: white;
+            font-size: 15px;
+        }
+
+            button:hover {
+                background-color: deepskyblue;
+                cursor: pointer;
+            }
+    </style>
+
+        <div class="container">
+            <br><br>
+            <h1>Login</h1>
+        <br><br>
+            <input type="text" placeholder="Nome de usuário">
+            <br><br>
+            <input type="password" placeholder="Senha">
+            <br><br>
+            <button>Entrar</button>
+            <br><br>
+            <h2>Caso não tenha um login realize o cadastro </h2>
+            <a rule="button" asp-controller="Home" asp-action="Cadastro">Criar Cadastro</a>
+            <br><br>
+        </div>
+</div>
